@@ -8,22 +8,27 @@
     "copy": "cp -vr src/*.html assets build/",
     "budo": "budo src/main.js:main.js --dir=build/ -- -t [babelify --presets es2015] -o build/main.js src/main.js",
     "stylus-watch": "stylus --watch --sourcemap-inline styles/main.styl -u autoprefixer-stylus -o build/main.css",
-    "static-watch": "watch 'npm run copy' src/ assets/"
+    "static-watch": "watch 'npm run copy' src/ assets/",
+    "build:js": "browserify -t [babelify --presets es2015] -o build/main.js src/main.js"
   },
-
   "author": "Martin Schuhfuss <m.schuhfuss@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
     "autoprefixer-stylus": "^0.8.1",
-    "babelify": "^7.2.0",
     "babel-preset-es2015": "^6.1.18",
+    "babelify": "^7.2.0",
     "budo": "^7.0.0",
+    "canvas": "^1.3.5",
+    "color-convert": "^0.7.0",
+    "eslint": "^1.10.3",
     "parallelshell": "^2.0.0",
+    "parse-color": "^1.0.0",
     "stylus": "^0.52.4",
-    "watch": "^0.16.0",
-    "three": "^0.73.0"
+    "three": "^0.73.0",
+    "watch": "^0.16.0"
   },
   "dependencies": {
+    "tween.js": "^16.3.1"
   }
 }

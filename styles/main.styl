@@ -1,11 +1,82 @@
 html
   box-sizing border-box
   height 100%
-  background-color black
+  background-color #cac4c4
+  font-family Raleway, sans-serif
+  font-feature-settings 'kern' 1
 
 *, *:before, *:after
   box-sizing inherit
 
 body
   margin 0
+  padding 0
   min-height 100%
+  font-size 1rem
+  line-height 1.2
+
+header
+  pointer-events none
+  color #fff
+  padding 2.5em 7.5% 30em 7.5%
+  padding-bottom 150vw
+
+  position absolute
+  width 100%
+  color white
+  margin-bottom 2.5em
+  max-width 28.125em
+
+
+.logo
+  vertical-align bottom
+  width 6.25em
+  max-width 17.1875em
+  margin-bottom 2.5em
+  width 10em
+
+h1,
+h2
+  font-size 2.25em
+  font-weight 100
+  text-transform uppercase
+  margin 0
+
+h1
+  font-size 3.5em
+
+h1 strong
+  font-weight 800
+
+h2
+  font-size 1.5em
+  font-weight 300
+  text-transform none
+  margin-bottom 1.6666666667em
+  margin-bottom 0.75em
+
+h2 .separator
+  display none
+  display inline
+
+h2 br
+  display none
+
+
+@media (min-width 700px)
+  header
+    padding-bottom: 70vw
+
+
+@media (min-width 1000px)
+  header
+    padding: 2.8125em 4.6875em 2.8125em 4.6875em
+    padding-bottom 30vw
+
+
+@media (min-width 1280px)
+  header
+    padding: 9em 4.6875em
+
+
+
