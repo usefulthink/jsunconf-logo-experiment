@@ -93,7 +93,7 @@ function initLights(scene) {
   backLight.shadowCameraNear = 550;
   backLight.shadowCameraFar = 850;
   backLight.shadowCameraFov = 35;
-  scene.add(new THREE.CameraHelper(backLight.shadow.camera));
+  //scene.add(new THREE.CameraHelper(backLight.shadow.camera));
 
 
   scene.add(backLight);
